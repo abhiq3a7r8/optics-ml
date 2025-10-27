@@ -130,7 +130,7 @@ if df is not None:
                 'metrics': calculate_metrics(X_scaled, hierarchical_labels)
             }
 
-            st.subheader("Clustering Comparison Results")
+            st.subheader("Ordering Points To Identify Cluster Structure")
 
             st.write("### Dataset Preview")
             st.dataframe(df)
@@ -284,3 +284,4 @@ if df is not None:
 
 else:
     st.info("Please upload a CSV file to begin the clustering analysis.")
+
