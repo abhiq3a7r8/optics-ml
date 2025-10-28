@@ -130,10 +130,21 @@ if df is not None:
                 'metrics': calculate_metrics(X_scaled, hierarchical_labels)
             }
 
-            st.subheader("Ordering Points To Identify Cluster Structure")
+            st.subheader("Clustering Comparison Results")
 
             st.write("### Dataset Preview")
             st.dataframe(df)
+
+            st.subheader("Preprocessing")
+            with st.expander("Show Processing Details"):
+                st.write("#### Descriptive Statistics")
+                st.dataframe(df.describe())
+
+                st.write("#### Missing Values Count")
+                st.dataframe(df.isnull().sum().rename("Missing Values"))
+
+                st.write("#### Data Types")
+                st.dataframe(df.dtypes.rename("Data Type"))
 
             tab1, tab2, tab3, tab4 = st.tabs(["Clustering Results", "Reachability Plots", "Performance Metrics", "Comparison"])
 
@@ -284,4 +295,3 @@ if df is not None:
 
 else:
     st.info("Please upload a CSV file to begin the clustering analysis.")
-
