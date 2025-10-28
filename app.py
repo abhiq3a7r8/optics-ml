@@ -220,7 +220,7 @@ if df is not None:
                 plt.tight_layout() # Adjust layout to prevent labels from overlapping
                 st.pyplot(fig2)
                 st.write("### OPTICS Reachability Plot Explanation")
-                st.image("https://miro.medium.com/v2/resize:fit:1400/0*wymX_5SxjxmtNGNY", caption="OPTICS Reachability Plot Interpretation")
+                st.image("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.semanticscholar.org%2Fpaper%2FOPTICS%253A-ordering-points-to-identify-the-clustering-Ankerst-Breunig%2F80c983b2f36e3db461e35a5e8836d4b20b485d4f&psig=AOvVaw1F0tyU6WnHYAajuG8Mgj5j&ust=1761717706481000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCLCFxoKcxpADFQAAAAAdAAAAABAV", caption="OPTICS Reachability Plot Interpretation")
 
             with tab3:
                 st.write("### Performance Metrics Comparison")
@@ -295,3 +295,4 @@ if df is not None:
 
 else:
     st.info("Please upload a CSV file to begin the clustering analysis.")
+
